@@ -1,0 +1,28 @@
+[project]
+name = "Enterprise-AI-Searcher"
+version = "0.1.0"
+description = "Enterprise-AI-Searcher"
+readme = "README.md"
+authors = [
+    { name = "Dava2310", email = "dvetencourt23@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "mypy>=2.4.0",
+    "pre-commit>=4.6.2",
+    "ruff>=0.16.10",
+]
+
+[tool.ruff]
+target-version = "py313"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.mypy]
+strict = true
+python_version = "3.13"
